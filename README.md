@@ -130,6 +130,8 @@ weather-app/
 - **Daily forecast aggregation** — OpenWeatherMap's free tier only exposes 3-hour steps, so `utils/weather.py` groups them by date, taking min/max temperature, averaging humidity/wind, taking the max precipitation probability, and using the entry closest to noon for a representative icon
 - **Errors are translated, never leaked** — every failure mode (bad key, unknown city, timeout, rate limit, malformed payload) becomes a specific error type with a safe, user-facing message and correct HTTP status — no raw tracebacks reach the client
 
+🔗 Live demo:  [https://jigcast-weather-console.onrender.com/](#)
+
 ## 👨‍💻 Author
 
 Atunde Toheeb Ayomide (Jiggy)
